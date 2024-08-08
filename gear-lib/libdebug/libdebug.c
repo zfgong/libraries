@@ -148,7 +148,7 @@ static void backtrace_symbols_detail(void *array[], int size)
     for (i = 1; i < size; ++i) {//from 1, ignore this file info
         fprintf(fp, "%p\n", array[i]);
     }
-    fclose(fp);
+    pclose(fp);
 }
 #endif
 
